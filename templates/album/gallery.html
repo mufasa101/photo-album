@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {% block page_data %}
+<div class="col s12 m8 l9 mb-4">
+  <div class="container" style="width: 90%">
+    <div class="row">
+      {% for photo in photos %}
+      <div class="col s12 m4" style="padding-top: 2rem">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{photo.image.url}}" style="height: 25vh; object-fit: cover" />
+            <span class="card-title teal lighten-2" style="padding: 3px 30px; opacity: 0.8">
+              {{photo.category.name}}</span
+            >
+          </div>
+          <div class="card-content">
+            <p class="truncate">{{photo.description}}</p>
+          </div>
+          <div class="card-action">
+            <a class="waves-effect waves-light btn"  href="{% url 'photo' photo.id %}"
+              >Click to view</a
+            >
+          </div>
+        </div>
+      </div>
+
+      {% empty %}
+      <h3>No photos available...</h3>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% endblock page_data %}

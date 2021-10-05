@@ -1,0 +1,110 @@
+
+{% extends 'base.html' %} {% block page_title %} {% endblock page_title %} {% block page_data %} 
+{% block nav_bar %} {% endblock nav_bar %}   
+<div class="row"style="height:100vh;width:90vw;padding:2rem">
+
+
+<div claess="container" steyle="width: 88% !important;margin-top:2rem;margin-left:300px;margin-right:300px">
+
+<div class="row">
+<a class="waves-effect waves-light btn" href="{% url 'gallery' %}"><i class="material-icons left">arrow_back</i>Go back</a>
+</div>
+</div> 
+<div clases="container col s12 m7" style="border:4px solid #5D6D7E;margwin:auto;margidn:4rem 6rem;padding:2rem 3rem">
+
+        <div class="row " stylel="padding:4rem">
+            <div classd="col-md-4">
+                <div class="cardl">
+
+
+                    <form method='POST' action="" enctype="multipart/form-data">
+                        {% csrf_token %}
+
+
+ 
+<div class="rowu">
+    <div class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+
+          <textarea id="textarea1" class="materialize-textarea" name="description" required data-length="120"></textarea>
+          <label for="textarea1">Enter a description</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<div class="input-field col s12">
+
+    <select name="category" >
+      <option value="none" disabled selected>Select existing category</option>
+       {% for category in categories %}
+        <option value='{{category.id}}'>{{category.name}}</option>
+        {% endfor %}
+    </select>
+    <label>Select existing category</label>
+  </div>
+
+ <div class="row">
+    <div class="input-field col s12">
+
+      <input  id="first_name2" type="text" class="validate"  name="category_new">
+      <label class="active" for="first_name2">Add a new category</label>
+    </div>
+  </div>
+
+  <div class="row">
+   <div class="file-field input-field">
+      <div class="btn">
+        <span>Image</span>
+        <input type="file" required name="images">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text">
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <button class="waves-effect waves-light btn btn-large" type='submit' >Click to Submit</button>
+
+  </div>
+
+{% comment %} 
+                        <div class="form-group m-3">
+                            <label>Description</label>
+                            <input required name="description" type="text" placeholder="Enter a description"
+                                class="form-control">
+                        </div> {% endcomment %}
+
+                        {% comment %} <div class="form-group m-3">
+                            <label>Select a category</label>
+                            <select name="category" class="form-control">
+                                <option value='none'>Select a category...</option>
+
+                                {% for category in categories %}
+                                <option value='{{category.id}}'>{{category.name}}</option>
+                                {% endfor %}
+                            </select>
+                        </div> {% endcomment %}
+
+
+                        {% comment %} <div class="form-group m-3">
+                            <label>Create a new category</label>
+                            <input name="category_new" type="text" placeholder="Create a new category"
+                                class="form-control">
+                        </div>
+
+                        <div class="form-group m-3">
+                            <label>Upload image</label>
+                            <input required name="images" type="file" multiple class="form-control-file">
+                        </div> {% endcomment %}
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+ 
+{% endblock page_data %}

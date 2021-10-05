@@ -1,0 +1,69 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{% static 'css/materialize.css' %}">
+       <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Simple AWS photo album -</title>
+    <style>
+
+.truncate {
+width: 15em;
+white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+</style>
+</head>
+  
+ 
+<body>
+<header>
+   {% block page_title %}
+  <nav class="top-nav">
+        <div class="container">
+          <div class="nav-wrapper">
+            <div class="row">
+              <div class="col s12 m10 offset-m1">
+<h2 class="header"> A simple photo album</h2>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    {% endblock page_title %}
+
+      </header>
+
+    <div class="row">
+    {% block nav_bar %}
+     <div class="col s12 m4 l3">
+            {% include 'partials/_navbar.html' %}
+</div>
+    {% endblock nav_bar %}
+   
+ {% block page_data %}
+
+{% endblock page_data %}
+</div>
+
+
+</div>
+</body>
+<script src="{% static 'js/materialize.min.js' %}"></script>
+<script> 
+    
+ 
+   M.AutoInit();
+    </script>
+
+</html>
+
+
+

@@ -1,0 +1,439 @@
+<html lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="description" content="Materialize is a modern responsive CSS framework based on Material Design by Google. ">
+    <title>Auto Init - Materialize</title>
+    <!-- Favicons-->
+    <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+    <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+    <!--  Android 5 Chrome Color-->
+    <meta name="theme-color" content="#EE6E73">
+    <!-- CSS-->
+    <link href="css/prism.css" rel="stylesheet">
+    <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- if !isDemo-->
+    <!--   script.-->
+    <!--     window.liveSettings = {-->
+    <!--       api_key: "a0b49b34b93844c38eaee15690d86413",-->
+    <!--       picker: "bottom-right",-->
+    <!--       detectlang: true,-->
+    <!--       dynamic: true,-->
+    <!--       autocollect: true-->
+    <!--     };-->
+    <!--   script(src='//cdn.transifex.com/live.js')-->
+  <script charset="utf-8" src="https://platform.twitter.com/js/button.5d16ecc02fbaf599a24dfb57ab239320.js"></script></head>
+  <body cz-shortcut-listen="true">
+    <header>
+      <nav class="top-nav">
+        <div class="container">
+          <div class="nav-wrapper">
+            <div class="row">
+              <div class="col s12 m10 offset-m1">
+                <h1 class="header">Auto Init</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container"><a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger full hide-on-large-only"><i class="material-icons">menu</i></a></div>
+      <ul id="nav-mobile" class="sidenav sidenav-fixed" style="transform: translateX(0px);">
+        <li class="logo"><a id="logo-container" href="/" class="brand-logo">
+            <object id="front-page-logo" type="image/svg+xml" data="res/materialize.svg">Your browser does not support SVG</object></a></li>
+        <li class="version"><a href="#" data-target="version-dropdown" class="dropdown-trigger">
+            1.0.0
+            <svg class="caret" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></a><ul id="version-dropdown" class="dropdown-content" tabindex="0">
+            <li tabindex="0"><a>1.0.0</a></li>
+            <li tabindex="0"><a href="http://archives.materializecss.com/0.100.2/">0.100.2</a></li>
+          </ul>
+          
+        </li>
+        <li class="search">
+          <div class="search-wrapper">
+            <input id="search" placeholder="Search"><i class="material-icons">search</i>
+            <div class="search-results"></div>
+          </div>
+        </li>
+        <li class="bold"><a href="about.html" class="waves-effect waves-teal">About</a></li>
+        <li class="bold"><a href="getting-started.html" class="waves-effect waves-teal">Getting Started</a></li>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li class="bold"><a class="collapsible-header waves-effect waves-teal" tabindex="0">CSS</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="color.html">Color</a></li>
+                  <li><a href="grid.html">Grid</a></li>
+                  <li><a href="helpers.html">Helpers</a></li>
+                  <li><a href="media-css.html">Media</a></li>
+                  <li><a href="pulse.html">Pulse</a></li>
+                  <li><a href="sass.html">Sass</a></li>
+                  <li><a href="shadow.html">Shadow</a></li>
+                  <li><a href="table.html">Table</a></li>
+                  <li><a href="css-transitions.html">Transitions</a></li>
+                  <li><a href="typography.html">Typography</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold"><a class="collapsible-header waves-effect waves-teal" tabindex="0">Components</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="badges.html">Badges</a></li>
+                  <li><a href="buttons.html">Buttons</a></li>
+                  <li><a href="breadcrumbs.html">Breadcrumbs</a></li>
+                  <li><a href="cards.html">Cards</a></li>
+                  <li><a href="collections.html">Collections</a></li>
+                  <li><a href="floating-action-button.html">Floating Action Button</a></li>
+                  <li><a href="footer.html">Footer</a></li>
+                  <li><a href="icons.html">Icons</a></li>
+                  <li><a href="navbar.html">Navbar</a></li>
+                  <li><a href="pagination.html">Pagination</a></li>
+                  <li><a href="preloader.html">Preloader</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold active"><a class="collapsible-header waves-effect waves-teal" tabindex="0">JavaScript</a>
+              <div class="collapsible-body" style="display: block;">
+                <ul>
+                  <li class="active"><a href="auto-init.html">Auto Init</a></li>
+                  <li><a href="carousel.html">Carousel</a></li>
+                  <li><a href="collapsible.html">Collapsible</a></li>
+                  <li><a href="dropdown.html">Dropdown</a></li>
+                  <li><a href="feature-discovery.html">FeatureDiscovery</a></li>
+                  <li><a href="media.html">Media</a></li>
+                  <li><a href="modals.html">Modals</a></li>
+                  <li><a href="parallax.html">Parallax</a></li>
+                  <li><a href="pushpin.html">Pushpin</a></li>
+                  <li><a href="scrollspy.html">Scrollspy</a></li>
+                  <li><a href="sidenav.html">Sidenav</a></li>
+                  <li><a href="tabs.html">Tabs</a></li>
+                  <li><a href="toasts.html">Toasts</a></li>
+                  <li><a href="tooltips.html">Tooltips</a></li>
+                  <li><a href="waves.html">Waves</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold"><a class="collapsible-header waves-effect waves-teal" tabindex="0">Forms</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="autocomplete.html">Autocomplete</a></li>
+                  <li><a href="checkboxes.html">Checkboxes</a></li>
+                  <li><a href="chips.html">Chips</a></li>
+                  <li><a href="pickers.html">Pickers</a></li>
+                  <li><a href="radio-buttons.html">Radio Buttons</a></li>
+                  <li><a href="range.html">Range</a></li>
+                  <li><a href="select.html">Select</a></li>
+                  <li><a href="switches.html">Switches</a></li>
+                  <li><a href="text-inputs.html">Text Inputs</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="bold"><a href="mobile.html" class="waves-effect waves-teal">Mobile</a></li>
+        <li class="bold"><a href="showcase.html" class="waves-effect waves-teal">Showcase</a></li>
+        <li class="bold"><a href="themes.html" class="waves-effect waves-teal">Themes</a></li>
+      </ul>
+    </header>
+    <main>
+    <div class="container">
+  <div class="row">
+
+    <div class="col s12 m8 offset-m1 xl7 offset-xl1">
+
+      <div id="introduction" class="section scrollspy">
+        <p class="caption">
+          Auto Init allows you to initialize all of the Materialize Components with a single function call. It is important to note that you cannot pass in options using this method.
+        </p>
+      </div>
+
+      <div id="initialization" class="scrollspy section">
+        <h3 class="header">Initialization</h3>
+        <pre class=" language-javascript"><code class=" language-javascript">
+  M<span class="token punctuation">.</span><span class="token function">AutoInit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        </code></pre>
+      </div>
+
+
+      <div id="options" class="scrollspy section">
+        <h3 class="header">Options</h3>
+        <table class="striped">
+          <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Default</th>
+                <th>Description</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>context</td>
+              <td>Element</td>
+              <td>document.body</td>
+              <td>DOM Element to search within for components.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+
+      <div id="options" class="scrollspy section">
+        <h3 class="header">Ignoring Elements</h3>
+
+        <p>If you want <code class=" language-javascript">M<span class="token punctuation">.</span><span class="token function">AutoInit</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code> to ignore a certain element, you can add the class <code class="language-markdown">.no-autoinit</code> to the element and it will not be initialized by autoinit.</p>
+      </div>
+
+
+
+    </div>
+    <div class="col hide-on-small-only m3 xl3 offset-xl1">
+      <div class="toc-wrapper pin-top" style="top: 0px;">
+        <div class="buysellads hide-on-small-only">
+          <!-- CarbonAds Zone Code -->
+          <script async="" src="//www.google-analytics.com/analytics.js"></script><script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script><script async="" type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYIK27J&amp;placement=materializecss" id="_carbonads_js"></script>
+        </div>
+        <div style="height: 1px;">
+          <ul class="section table-of-contents">
+            <li><a href="#introduction" class="active">Introduction</a></li>
+            <li><a href="#initialization">Initialization</a></li>
+            <li><a href="#options">Options</a></li>
+            <li><a href="#ignoring">Ignoring Elements</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    </main>    <footer class="page-footer docs-footer">
+      <div class="container">
+        <div class="row" style="margin-bottom: 0;">
+          <div class="col s12 m10 offset-m1">
+            <div class="row">
+              <div class="col l4 s12">
+                <h5>Help Materialize Grow</h5>
+                <p class="grey-text text-darken-2">We hope you have enjoyed using Materialize and if you feel like it has helped you out and want to support the team you can help us by donating or backing us on Patreon. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+                <a class="btn waves-effect waves-light red lighten-2" href="/support-us.html">Support Us</a>
+
+              </div>
+              <div class="col l4 s12">
+                <h5>Join the Discussion</h5>
+                <p class="grey-text text-darken-2">We have a Gitter chat room set up where you can talk directly with us. Come in and discuss new features, future goals, general problems or questions, or anything else you can think of.</p>
+                <a class="btn waves-effect waves-light red lighten-2" target="_blank" href="https://gitter.im/Dogfalo/materialize">Chat</a>
+              </div>
+              <div class="col l4 s12" style="overflow: hidden;">
+                <h5>Connect</h5>
+                <iframe src="https://ghbtns.com/github-btn.html?user=dogfalo&amp;repo=materialize&amp;type=watch&amp;count=true&amp;size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+                <br>
+                <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 290px; height: 28px;" title="Twitter Follow Button" src="https://platform.twitter.com/widgets/follow_button.58065ae230495f5d9e4b6a916472b2c1.en.html#dnt=true&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=MaterializeCSS&amp;show_count=true&amp;show_screen_name=true&amp;size=l&amp;time=1633165317724" data-screen-name="MaterializeCSS"></iframe>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s12">
+                <h5>Patreon Sponsors</h5>
+              </div>
+              <div class="col s12">
+                <div class="patreon-footer-ad">
+                  <a href="https://cryptocurrencycodes.com/" alt="Cryptocurreny Codes" target="_blank" rel="noopener">
+                    <img src="https://i.postimg.cc/cLK5Qhw5/CC-LOGO-3.png" alt="Cryptocurreny Codes">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="http://realtimecommunicationsworld.com/" alt="Real Time Communications World" target="_blank" rel="noopener">
+                    <img src="https://i.postimg.cc/pVQNrPtc/Screen-Shot-2021-09-01-at-1-18-05-PM.png" alt="Real Time Communications World">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://quickbooksfiledoctor.co/" alt="QUICKBOOKS FILE DOCTOR" target="_blank" rel="noopener">
+                    <img src="https://quickbooksfiledoctor.co/wp-content/uploads/2021/07/cropped-Quickbooks-File-Doctor.png" alt="QUICKBOOKS FILE DOCTOR">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://knoji.com/promo-codes/" alt="Knoji" target="_blank" rel="noopener">
+                    <img src="https://i.postimg.cc/fbwDBPXS/knoji.png" alt="Knoji">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://writersperhour.com/" alt="Writers Per Hour" target="_blank" rel="noopener">
+                    <img src="https://i.postimg.cc/ZRdvbxDq/Screen-Shot-2021-06-02-at-10-16-12-AM.png" alt="Writers Per Hour">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://pillarwm.com/why-it-matters-ultra-high-net-worth-or-high-net-worth/" alt="Pillarwm" target="_blank" rel="noopener">
+                    <img src="https://i.imgur.com/c2fOjEF.png" alt="Pillarwm">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://www.coupons4printing.com/" alt="Coupons4Printing" target="_blank" rel="noopener">
+                    <img src="https://i.postimg.cc/bNMYHL7V/coupons4printing.png" alt="Coupons4Printing">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://www.brandnewweb.nl" target="_blank" rel="noopener">
+                    <img src="https://s13.postimg.cc/3pxqiuqyf/brandnewweb.png" alt="Brand New Web">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://icons8.com/material-icons" target="_blank" rel="noopener">
+                    <img src="https://s13.postimg.cc/q0lliz153/icons8-logo-opencollective.png" alt="Icons8">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://typestack.nl" target="_blank" rel="noopener">
+                    <img src="https://s13.postimg.cc/6k0vwalev/typestack.png" alt="Open source fully loaded CMS in #2019">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://www.onecompare.com/apple" target="_blank" rel="noopener">
+                    <img src="https://i.postimg.cc/vT9dwrvF/logo-temp.png" alt="Compare the cheapest Apple deals">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://www.vpsserver.com/" target="_blank" rel="noopener">
+                    <img src="https://i.postimg.cc/VLsgFL7S/logo.png" alt="VPS Server">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://sumatosoft.com/services/ruby-on-rails-development" alt="SUMATOSOFT" target="_blank" rel="noopener">
+                    <img src="https://i.postimg.cc/ZYwqSqPb/5130672.png" alt="SUMATOSOFT">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://kredittkrt.no/" alt="kredittkort" target="_blank" rel="noopener">
+                    <img src="https://kredittkrt.no/wp-content/uploads/2016/02/kredittkrt-logo.png" alt="kredittkort">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://netqualified.com/" alt="Notification widget for website engagement and conversion" target="_blank" rel="noopener">
+                    <img src="https://netqualified.com/uploads/logo/008c4b17d2f7dffb207c95d34ab72eac.png" alt="Notification widget for website engagement and conversion">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://monovm.com/" alt="VPS Hosting" target="_blank" rel="noopener">
+                    <img src="https://i.postimg.cc/bvhm6D5J/monovm-logo.jpg" alt="VPS Hosting">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://www.firesticktricks.com/" alt="Fire Stick Tricks" target="_blank" rel="noopener">
+                    <img src="https://i.postimg.cc/Pq5Fc7N7/Firesticktricks-black-bg.png" alt="Fire Stick Tricks">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://www.ramotion.com/agency/ui-ux-design" target="_blank" rel="noopener">
+                    <img src="https://i.postimg.cc/zDgLzCXN/Logo-1.png" alt="UX Agency">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="http://www.datantify.com/" target="_blank" rel="noopener">
+                    <img src="https://i.postimg.cc/C5SN1GLy/datantify.png" alt="Datantify">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://www.utilitysavingexpert.com/" alt="Compare Energy" target="_blank" rel="noopener">
+                    <img src="https://i.postimg.cc/fbGCbZs5/Logo-1200x630.png" alt="Compare car insurance at Utility Saving Expert">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://runningseo.com" target="_blank" rel="noopener">
+                    <img src="https://i.postimg.cc/Kz911f3c/56766135-running-SEO-logo-01.png" alt="SEO Companies and Optimization Tips from Experts">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://www.dontpayfull.com" target="_blank" rel="noopener">
+                    <img src="https://s15.postimg.cc/elkjc67zv/Banner_120x60-white.png" alt="Dont Pay Full">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://gaggle.email/" target="_blank" rel="noopener">
+                    <img src="https://s13.postimg.cc/oqns3tzmf/gaggle-mail-logo.png" alt="Gaggle Mail">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://clay.global/" target="_blank" rel="noopener">
+                    <img src="https://i.postimg.cc/8knGJCYr/clay-logo-transp.png" alt="UI UX Design Agency">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://www.codefirst.co.uk/" target="_blank" rel="noopener">
+                    <img src="https://i.postimg.cc/CKsnHG6P/image001.png" alt="CodeFirst">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://www.stillio.com/" target="_blank" rel="noopener">
+                    <img src="https://s13.postimg.cc/hcpyykzbr/stillio-as-logo-1000-green.png" title="Capture and archive website screenshots automatically with Stillio" alt="Capture and archive website screenshots automatically with Stillio">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://blokt.com/" target="_blank" rel="noopener">
+                    <img src="https://i.postimg.cc/m27ZtrxQ/blokt-logo-no-tagline-light-bg-1200x250px1.png" alt="Blokt Cryptocurrency News">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://www.hosted.nl/vps/" target="_blank" rel="noopener">
+                    <img src="https://i.postimg.cc/6pfGWk4Q/hostednl.png" alt="Hosted NL">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://www.valuemarke.com/" alt="Value Marketing" target="_blank" rel="noopener">
+                    <img src="https://i.postimg.cc/MGxYwbdC/Ikon-Oransje-RGB.png" alt="Value Marketing">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://keymedium.com" target="_blank" rel="noopener">
+                    <img src="https://s13.postimg.cc/m9c0wcpxz/2017-10-23-logo-refresh.png" alt="Philadelphia Web Design &amp; SEO Agency">
+                  </a>
+                </div>
+                <div class="patreon-footer-ad">
+                  <a href="https://cryptoefx.com" target="_blank" rel="noopener">
+                    <img src="https://s14.postimg.cc/gs1o4wy29/crypto-_EFX.png" alt="crypto EFX">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-copyright">
+              © 2014-<noscript>2018</noscript><script type="text/javascript">document.write(new Date().getFullYear());</script>2021 Materialize, All rights reserved.
+              <a class="grey-text text-darken-1 right" href="https://github.com/Dogfalo/materialize/blob/master/LICENSE">MIT License</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>if (!window.jQuery) { document.write('<script src="bin/jquery-3.2.1.min.js"><\/script>'); }
+    </script>
+    <script src="docs/js/jquery.timeago.min.js"></script>
+    <script src="docs/js/prism.js"></script>
+    <script src="docs/js/lunr.min.js"></script>
+    <script src="docs/js/search.js"></script>
+    <script src="bin/materialize.js"></script>
+    <script src="docs/js/init.js"></script>
+    <!-- Twitter Button -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+    <!--  Google Analytics  -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-56218128-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+    </script>
+
+  
+<div class="sidenav-overlay" style="display: none;"></div><div class="drag-target"></div><iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.58065ae230495f5d9e4b6a916472b2c1.html?origin=https%3A%2F%2Fmaterializecss.com" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe></body></html>

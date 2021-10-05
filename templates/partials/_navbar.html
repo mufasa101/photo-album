@@ -1,0 +1,50 @@
+{% load static %}
+<style>
+ul.sidenav.sidenav-fixed li a {
+  font-size:16px;
+}
+</style>
+<div class="container">
+  <a href="#" data-target="slide-out" class="top-nav sidenav-trigger full hide-on-large-only"
+    ><i class="material-icons">menu</i></a>
+</div>
+
+<ul id="slide-out" class="sidenav sidenav-fixed" >
+  <li>
+    <div
+      class="background2"
+      style="
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+        margin-bottomq: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 20vh;
+        bsackground-color: red;
+      "
+    >
+      <img
+        style="height: 70px; width: 70px; object-fit: cover"
+        src="{% static 'images/logo.webp' %}"
+      />
+    </div>
+  </li>
+
+  <li
+    class="bold"
+    style="border-top: 1px solid rgba(0, 0, 0, 0.14); padding-top: 2rem; margin-top: 0.6rem">
+    <a href="{% url 'gallery' %}" class="waves-effect waves-teal">All</a>
+  </li>
+    {% for category in categories %}
+    <li class="bold"><a href="{% url 'gallery' %}?category={{category.name}}" class="waves-effect waves-teal">  {{category.name}}</a></li>
+
+  {% endfor %}
+
+  <li>
+    <a href="{% url 'add' %}" class="waves-effect waves-light btn-large" style="font-size:13px">Add a photo</a>
+  </li>
+</ul>
+
+

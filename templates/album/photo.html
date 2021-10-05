@@ -1,0 +1,43 @@
+{% extends 'base.html' %} {% block page_title %} {% endblock page_title %} {% block page_data %} 
+{% block nav_bar %} {% endblock nav_bar %}
+<div class="container" style="width: 88% !important;margin-top:2rem">
+
+<div class="row">
+<a class="waves-effect waves-light btn" href="{% url 'gallery' %}"><i class="material-icons left">arrow_back</i>Go back</a>
+</div>
+</div>
+<div class="container" style="width: 90% !important; margin-top: 2rem">
+  <div class="row">
+    <div class="col s12 m8">
+      <div  style="position: relative">
+        <img src="{{photo.image.url}}" style="object-fit: cover; width: 100%" />
+        <span
+          class="card-title teal lighten-2"
+          style="
+            padding: 9px 60px;
+            opacity: 0.8;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #fff;
+            max-width: 100%;
+            font-size: 24px;
+            font-weight: 300;
+          "
+        >
+          {{photo.category.name}}</span
+        >
+      </div>
+    </div>
+    <div
+      class="col s12 m4 card-panel teal lighten-3"
+      style="margin-top:0;!important;padding:0.5rem 2rem !important"
+    >
+      <h4 style="border-bottom:0.2rem solid #ECF0F1; padding-bottom:2rem;font-weight: 700;">About this photo</h4>
+
+      <p style="font-size: 1.2em">{{photo.description}}</p>
+    </div>
+  </div>
+</div>
+
+{% endblock page_data %}
